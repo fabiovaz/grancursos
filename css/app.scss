@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
 
 body {
     font-family: "Montserrat", sans-serif;
@@ -18,31 +18,72 @@ body {
     height: 100%;
     img {
         max-width: fit-content;
-        opacity: .5;
+        opacity: 0.5;
     }
 }
 
+h5 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
 aside {
-    position: absolute;
+    overflow-y: scroll;
+    position: fixed;
     top: 0;
     left: 0;
     padding: 30px 23px;
     width: 280px;
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     background: #ffffff;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.170509);
     nav {
+        margin-top: 43px;
         font-size: 14px;
-        font-weight: 400;
+        font-weight: 500;
         color: #999999;
+        .nav {
+            &-title {
+                display: inline-block;
+                margin-top: 22px;
+                padding: 0 13px;
+            }
+        }
         ul {
             padding: 0;
             list-style: none;
             li {
-                line-height: 40px;
+                margin: 6px 0;
                 a {
+                    position: relative;
+                    display: block;
+                    padding: 9px 13px;
                     font-size: 15px;
+                    line-height: 1;
                     color: #2c2c2c;
+                    border-radius: 5px;
+                    span {
+                        display: inline-block;
+                        vertical-align: middle;
+                        &.icon {
+                            text-align: center;
+                            width: 20px;
+                            margin-right: 4px;
+                        }
+                        &.chevron {
+                            position: absolute;
+                            top: 50%;
+                            right: 13px;
+                            transform: translateY(calc(-50% - 2px));
+                        }
+                    }
+                    &:hover,
+                    &.active {
+                        color: #2c2c2c;
+                        text-decoration: none;
+                        background: #ececec;
+                    }
                 }
             }
         }
@@ -50,18 +91,179 @@ aside {
 }
 
 header {
-    padding-left: 280px;
+    padding-left: 300px;
 
     .callout {
+        margin-top: 30px;
+        padding: 8px 19px;
         background: #ffffff;
-        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.13);
         border-radius: 8px;
+        font-size: 14px;
+        color: #2c2c2c;
+        .list {
+            &-inline {
+                margin: 0;
+                &-item {
+                    vertical-align: middle;
+                    margin: 0 10px;
+                }
+            }
+        }
+        .user {
+            &-data {
+                display: inline-block;
+                line-height: 1;
+                vertical-align: middle;
+            }
+            &-image {
+                display: inline-block;
+            }
+        }
     }
 }
 
 main {
-    padding-left: 280px;
+    margin: 30px 0;
+    padding-left: 300px;
     min-height: 100vh;
+
+    ul.bcrumb {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        color: #2c2c2c;
+        li {
+            position: relative;
+            display: inline-block;
+            padding-right: 25px;
+            padding-left: 5px;
+            vertical-align: middle;
+            font-size: 14px;
+            svg {
+                margin-top: -4px;
+            }
+            &:after {
+                content: url('data:image/svg+xml; utf8, <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 9L12 5L8 1" stroke="black" stroke-linecap="round" stroke-linejoin="round"/><path d="M1 9L5 5L1 1" stroke="black" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+                position: absolute;
+                top: 50%;
+                right: 0;
+                font-size: 12px;
+                transform: translateY(-50%);
+            }
+            &:first-child {
+                padding-left: 0px;
+                padding-right: 20px;
+                font-size: 24px;
+                margin-right: 12px;
+                &:after {
+                    content: "";
+                    width: 1px;
+                    height: 32px;
+                    background: #979797;
+                }
+            }
+            &:last-child {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .filters {
+        .callout {
+            padding: 25px 32px;
+            font-weight: 300;
+            color: #2c2c2c;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+            span {
+                &.stats {
+                    position: absolute;
+                    right: 0;
+                    font-size: 14px;
+                }
+            }
+            h5 {
+                margin: 1.6rem 0;
+            }
+            hr {
+                margin: 1rem 0;
+            }
+            .form {
+                &-check {
+                    margin-bottom: 0.4rem;
+                }
+                &-group {
+                    position: relative;
+                    margin-bottom: 0.4rem;
+                }
+            }
+        }
+    }
+
+    .products {
+        .callout {
+            padding: 25px 32px;
+            font-weight: 300;
+            color: #2c2c2c;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+            p {
+                font-size:  14px;
+            }
+            .actions {
+                width: 220px;
+                padding: 20px;
+                border-left: 1px solid #DADADA;
+                span {
+                    font-size: 14px;
+                    color: #999;
+                }
+                .btn {
+                    display: block;
+                    padding: 10px;
+                    width: 100%;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+.btn {
+    border-radius: 8px;
+    padding: 17px 25px;
+    &-default {
+        font-size: 18px;
+        color: #fff;
+        background: #696969;
+    }
+    &-light {
+        font-size: 18px;
+        color: #2C2C2C;
+        background: #EDEDED;
+    }
+    &-settings {
+        position: relative;
+        display: inline-block;
+        padding: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #717171;
+        svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
 }
 
 footer {
