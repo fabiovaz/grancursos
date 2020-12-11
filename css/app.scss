@@ -90,15 +90,18 @@ aside {
     }
 }
 
+.callout {
+    background: #ffffff;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.13);
+    border-radius: 8px;
+}
+
 header {
     padding-left: 300px;
 
     .callout {
         margin-top: 30px;
         padding: 8px 19px;
-        background: #ffffff;
-        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.13);
-        border-radius: 8px;
         font-size: 14px;
         color: #2c2c2c;
         .list {
@@ -171,17 +174,24 @@ main {
         }
     }
 
+    .holder-title {
+        display: flex;
+        align-items: flex-end;
+        height: 41px;
+        h5 {
+            margin: 0;
+        }
+    }
+
     .filters {
         .callout {
-            padding: 25px 32px;
+            padding: 5px 32px;
             font-weight: 300;
             color: #2c2c2c;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
             span {
                 &.stats {
                     position: absolute;
+                    top: 2px;
                     right: 0;
                     font-size: 14px;
                 }
@@ -194,43 +204,156 @@ main {
             }
             .form {
                 &-check {
+                    padding-right: 36px;
                     margin-bottom: 0.4rem;
+                    vertical-align: middle;
                 }
                 &-group {
                     position: relative;
+                    padding-right: 36px;
                     margin-bottom: 0.4rem;
                 }
             }
         }
     }
 
+    .form-search {
+        position: relative;
+        &-input {
+            height: 62px;
+            border: none;
+            padding: 14px 60px 14px 30px;
+            font-size: 22px;
+        }
+        &-btn {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+
     .products {
         .callout {
-            padding: 25px 32px;
+            padding: 0 15px;
             font-weight: 300;
             color: #2c2c2c;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
-            p {
-                font-size:  14px;
+            .product {
+                &-image {
+                    padding: 15px 0 15px 15px;
+                    img {
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                &-body {
+                    margin: 15px 0;
+                    h6 {
+                        margin-bottom: 0.2rem;
+                    }
+                    small {
+                        color: #7e7e7e;
+                    }
+                    p {
+                        font-size: 14px;
+                    }
+                }
+                &-actions {
+                    position: relative;
+                    display: flex;
+                    width: 220px;
+                    padding: 55px 15px 15px;
+                    border-left: 1px solid #dadada;
+                    .rating {
+                        position: absolute;
+                        display: inline-block;
+                        top: 15px;
+                        right: 15px;
+                        padding: 5px 10px;
+                        color: #fff;
+                        font-size: 14px;
+                        border-radius: 3px;
+                        background: #787878;
+                        svg {
+                            margin-top: -3px;
+                        }
+                    }
+                    &-content {
+                        align-self: flex-end;
+                        width: 100%;
+                    }
+                    span {
+                        font-size: 14px;
+                        color: #999;
+                    }
+                    .btn {
+                        display: block;
+                        padding: 10px;
+                        width: 100%;
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                    }
+                }
             }
-            .actions {
-                width: 220px;
-                padding: 20px;
-                border-left: 1px solid #DADADA;
-                span {
-                    font-size: 14px;
-                    color: #999;
+        }
+    }
+
+    .pagination {
+        font-size: 14px;
+        .page {
+            &-item {
+                &.active {
+                    .page-link {
+                        border: none;
+                        background: #ededed;
+                        &:after {
+                            z-index: -1;
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 50%;
+                            background: #686868;
+                        }
+                    }
                 }
-                .btn {
-                    display: block;
-                    padding: 10px;
-                    width: 100%;
-                    font-size: 14px;
-                    text-transform: uppercase;
-                    font-weight: 600;
+                &:first-child,
+                &:last-child {
+                    .page-link {
+                        padding: 10px 16px;
+                        border-radius: 50%;
+                    }
                 }
+                &:first-child {
+                    .page-link {
+                        margin-right: 15px;
+                    }
+                }
+                &:last-child {
+                    .page-link {
+                        margin-left: 15px;
+                    }
+                }
+                &:nth-child(2) {
+                    .page-link {
+                        border-top-left-radius: 50%;
+                        border-bottom-left-radius: 50%;
+                    }
+                }
+                &:nth-last-child(2) {
+                    .page-link {
+                        border-top-right-radius: 50%;
+                        border-bottom-right-radius: 50%;
+                    }
+                }
+            }
+            &-link {
+                color: #2c2c2c;
+                padding: 10px 15px;
+                border: none;
+                background: #ededed;
             }
         }
     }
@@ -246,8 +369,15 @@ main {
     }
     &-light {
         font-size: 18px;
-        color: #2C2C2C;
-        background: #EDEDED;
+        color: #2c2c2c;
+        background: #ededed;
+    }
+    &-callout {
+        padding: 9px 11px;
+        font-size: 14px;
+        background: #ffffff;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.13);
+        border-radius: 8px;
     }
     &-settings {
         position: relative;
