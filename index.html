@@ -11,19 +11,17 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
 
-        <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css" />
-
         <link href="css/app.css" rel="stylesheet" type="text/css" />
-        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-        <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-
-        <link href="plugins/magnificpopup/magnific-popup.css" rel="stylesheet" type="text/css" />
     </head>
 
     <body>
-        <!-- <div class="site">
-            <img src="img/wireframe.png" />
-        </div> -->
+        <div class="switcher">
+            <span class="hamburguer">
+                <span class="bar bar-1"></span>
+                <span class="bar bar-2"></span>
+                <span class="bar bar-3"></span>
+            </span>
+        </div>
 
         <aside>
             <div class="container-full">
@@ -47,7 +45,7 @@
                                                 <path d="M5.66663 16.5556V8.77783H10.3333V16.5556" stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
                                         </span>
-                                        <span>Dashboard</span>
+                                        <span class="title">Dashboard</span>
                                         <span class="chevron">
                                             <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M1 1L6 6L11 1" stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -62,7 +60,7 @@
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6 11C8.76142 11 11 8.76142 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11Z" stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
                                         </span>
-                                        <span></span>eCommerce
+                                        <span class="title">eCommerce</span>
                                     </a>
                                 </li>
                             </ul>
@@ -77,7 +75,7 @@
                                                 <path d="M17 2.83643L9 7.3039L1 2.83643" stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
                                         </span>
-                                        <span>Email</span>
+                                        <span class="title">Email</span>
                                     </a>
                                 </li>
                                 <li>
@@ -87,7 +85,7 @@
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M17 12.1467C17 13.1337 16.2041 13.9337 15.2222 13.9337H4.55556L1 17.5077V3.21179C1 2.22487 1.79594 1.4248 2.77778 1.4248H15.2222C16.2041 1.4248 17 2.22487 17 3.21179V12.1467Z" stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
                                         </span>
-                                        <span>Chat</span>
+                                        <span class="title">Chat</span>
                                     </a>
                                 </li>
                                 <li>
@@ -98,7 +96,7 @@
                                                 <path d="M16.1579 9.25542V15.1807C16.1579 16.1157 15.4038 16.8736 14.4737 16.8736H2.68421C1.75405 16.8736 1 16.1157 1 15.1807V3.33014C1 2.39516 1.75405 1.63721 2.68421 1.63721H11.9474" stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
                                         </span>
-                                        <span>Todo</span>
+                                        <span class="title">Todo</span>
                                     </a>
                                 </li>
                                 <li>
@@ -111,7 +109,7 @@
                                                 <path d="M1 9.38345H17" stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
                                         </span>
-                                        <span>Calendar</span>
+                                        <span class="title">Calendar</span>
                                     </a>
                                 </li>
                             </ul>
@@ -127,7 +125,7 @@
                                                 <path d="M6.33336 17.2467V6.53467" stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
                                         </span>
-                                        <span>Grid</span>
+                                        <span class="title">Grid</span>
                                         <span class="chevron">
                                             <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M1.48938 11.7148L6.51066 6.71484L1.48938 1.71484" stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -142,7 +140,7 @@
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8.52944 1.01758L13.8565 6.43099C16.0109 8.6189 16.656 11.9103 15.4909 14.7701C14.3258 17.6299 11.58 19.4946 8.53415 19.4946C5.48834 19.4946 2.74253 17.6299 1.57741 14.7701C0.412287 11.9103 1.05738 8.6189 3.2118 6.43099L8.52944 1.01758Z" stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
                                         </span>
-                                        <span>Colors</span>
+                                        <span class="title">Colors</span>
                                     </a>
                                 </li>
                                 <li>
@@ -153,7 +151,7 @@
                                                 <path d="M1 6.06825H17" stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
                                         </span>
-                                        <span>Card</span>
+                                        <span class="title">Card</span>
                                         <span class="chevron">
                                             <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M1.48938 11.7148L6.51066 6.71484L1.48938 1.71484" stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -171,7 +169,7 @@
                                                 <rect x="1" y="11.53" width="6.22222" height="6.2487" stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
                                         </span>
-                                        <span>Table</span>
+                                        <span class="title">Table</span>
                                     </a>
                                 </li>
                                 <li>
@@ -183,7 +181,7 @@
                                                 <path d="M7.54541 8.41709H10.4545" stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
                                         </span>
-                                        <span>Components</span>
+                                        <span class="title">Components</span>
                                         <span class="chevron">
                                             <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M1.48938 11.7148L6.51066 6.71484L1.48938 1.71484" stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -203,7 +201,7 @@
                                                 <path d="M3.4 11.6768H2.6C1.71634 11.6768 1 10.9567 1 10.0685V2.83119C1 1.94296 1.71634 1.2229 2.6 1.2229H9.8C10.6837 1.2229 11.4 1.94296 11.4 2.83119V3.63534" stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
                                         </span>
-                                        <span>Form Elements</span>
+                                        <span class="title">Form Elements</span>
                                         <span class="chevron">
                                             <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M1.48938 11.7148L6.51066 6.71484L1.48938 1.71484" stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -219,7 +217,7 @@
                                                 <path d="M6.33336 1.43018V17.5131" stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
                                         </span>
-                                        <span>Form Layouts</span>
+                                        <span class="title">Form Layouts</span>
                                     </a>
                                 </li>
                                 <li>
@@ -233,7 +231,7 @@
                                                 <path d="M6.25 7.79401H5.375H4.5" stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
                                         </span>
-                                        <span>Form Wizard</span>
+                                        <span class="title">Form Wizard</span>
                                     </a>
                                 </li>
                                 <li>
@@ -244,7 +242,7 @@
                                                 <path d="M17.0001 3.26221L9.0001 11.3117L6.6001 8.89926" stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
                                         </span>
-                                        <span>Form Validation</span>
+                                        <span class="title">Form Validation</span>
                                     </a>
                                 </li>
                             </ul>
@@ -354,217 +352,227 @@
                 </div>
 
                 <div class="row mt-4">
-                    <div class="col-3">
+                    <div class="col-12 col-md-4 col-lg-3">
                         <div class="filters">
                             <div class="holder-title">
-                                <h5>Filters</h5>
+                                <h5 class="d-none d-sm-block">Filters</h5>
+                                <a data-toggle="collapse" href="#collapseFilters">
+                                    <h5 class="d-block d-sm-none">
+                                        Filters
+                                        <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1L6 6L11 1" stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </h5>
+                                </a>
                             </div>
-                            <div class="callout mt-3">
-                                <h5 class="font-weight-bold">Multi Range</h5>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" />
-                                    <label class="form-check-label" for="exampleRadios1">$10</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" />
-                                    <label class="form-check-label" for="exampleRadios2">$10 - $100</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" />
-                                    <label class="form-check-label" for="exampleRadios3">$100 - $500</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4" />
-                                    <label class="form-check-label" for="exampleRadios4">$500</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="option5" checked />
-                                    <label class="form-check-label" for="exampleRadios5">All</label>
-                                </div>
+                            <div class="collapse show" id="collapseFilters">
+                                <div class="callout mt-3">
+                                    <h5 class="font-weight-bold">Multi Range</h5>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" />
+                                        <label class="form-check-label" for="exampleRadios1">$10</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" />
+                                        <label class="form-check-label" for="exampleRadios2">$10 - $100</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" />
+                                        <label class="form-check-label" for="exampleRadios3">$100 - $500</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4" />
+                                        <label class="form-check-label" for="exampleRadios4">$500</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="option5" checked />
+                                        <label class="form-check-label" for="exampleRadios5">All</label>
+                                    </div>
 
-                                <hr />
-                                <h5 class="font-weight-bold">Slider</h5>
-                                <div class="form-group">
-                                    <input type="range" class="form-control-range" id="formControlRange" />
-                                </div>
+                                    <hr />
+                                    <h5 class="font-weight-bold">Slider</h5>
+                                    <div class="form-group">
+                                        <input type="range" class="form-control-range" id="formControlRange" />
+                                    </div>
 
-                                <hr />
-                                <h5 class="font-weight-bold">Category</h5>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                                    <label class="form-check-label" for="defaultCheck1">Cell Phones</label>
-                                    <span class="stats">1920</span>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" />
-                                    <label class="form-check-label" for="defaultCheck2">Computers & Tablets</label>
-                                    <span class="stats">1820</span>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" />
-                                    <label class="form-check-label" for="defaultCheck3">Cell Phone Accessories</label>
-                                    <span class="stats">462</span>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck4" />
-                                    <label class="form-check-label" for="defaultCheck4">Appliances</label>
-                                    <span class="stats">6556</span>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck5" />
-                                    <label class="form-check-label" for="defaultCheck5">Audio</label>
-                                    <span class="stats">120</span>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck6" />
-                                    <label class="form-check-label" for="defaultCheck6">iPhone Accessories</label>
-                                    <span class="stats">353</span>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck7" />
-                                    <label class="form-check-label" for="defaultCheck7">Cameras & Camcorders</label>
-                                    <span class="stats">45</span>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck8" />
-                                    <label class="form-check-label" for="defaultCheck8">iPhone Cases & Clips</label>
-                                    <span class="stats">456</span>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck9" />
-                                    <label class="form-check-label" for="defaultCheck9">TV & Home Theater</label>
-                                    <span class="stats">55</span>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck10" />
-                                    <label class="form-check-label" for="defaultCheck10">Small Kitchen Appliances</label>
-                                    <span class="stats">10</span>
-                                </div>
+                                    <hr />
+                                    <h5 class="font-weight-bold">Category</h5>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                                        <label class="form-check-label" for="defaultCheck1">Cell Phones</label>
+                                        <span class="stats">1920</span>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" />
+                                        <label class="form-check-label" for="defaultCheck2">Computers & Tablets</label>
+                                        <span class="stats">1820</span>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" />
+                                        <label class="form-check-label" for="defaultCheck3">Cell Phone Accessories</label>
+                                        <span class="stats">462</span>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck4" />
+                                        <label class="form-check-label" for="defaultCheck4">Appliances</label>
+                                        <span class="stats">6556</span>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck5" />
+                                        <label class="form-check-label" for="defaultCheck5">Audio</label>
+                                        <span class="stats">120</span>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck6" />
+                                        <label class="form-check-label" for="defaultCheck6">iPhone Accessories</label>
+                                        <span class="stats">353</span>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck7" />
+                                        <label class="form-check-label" for="defaultCheck7">Cameras & Camcorders</label>
+                                        <span class="stats">45</span>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck8" />
+                                        <label class="form-check-label" for="defaultCheck8">iPhone Cases & Clips</label>
+                                        <span class="stats">456</span>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck9" />
+                                        <label class="form-check-label" for="defaultCheck9">TV & Home Theater</label>
+                                        <span class="stats">55</span>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck10" />
+                                        <label class="form-check-label" for="defaultCheck10">Small Kitchen Appliances</label>
+                                        <span class="stats">10</span>
+                                    </div>
 
-                                <hr />
-                                <h5 class="font-weight-bold">Brand</h5>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck11" />
-                                    <label class="form-check-label" for="defaultCheck11">Insigni</label>
-                                    <span class="stats">220</span>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck12" />
-                                    <label class="form-check-label" for="defaultCheck12">Samsung</label>
-                                    <span class="stats">120</span>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck13" />
-                                    <label class="form-check-label" for="defaultCheck13">Apple</label>
-                                    <span class="stats">320</span>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck14" />
-                                    <label class="form-check-label" for="defaultCheck14">HP</label>
-                                    <span class="stats">32</span>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck15" />
-                                    <label class="form-check-label" for="defaultCheck15">Sony</label>
-                                    <span class="stats">520</span>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck16" />
-                                    <label class="form-check-label" for="defaultCheck16">Metra</label>
-                                    <span class="stats">55</span>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck17" />
-                                    <label class="form-check-label" for="defaultCheck17">Dyne</label>
-                                    <span class="stats">120</span>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck18" />
-                                    <label class="form-check-label" for="defaultCheck18">LG</label>
-                                    <span class="stats">98</span>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck19" />
-                                    <label class="form-check-label" for="defaultCheck19">Canon</label>
-                                    <span class="stats">99</span>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck20" />
-                                    <label class="form-check-label" for="defaultCheck20">Speck</label>
-                                    <span class="stats">575</span>
-                                </div>
+                                    <hr />
+                                    <h5 class="font-weight-bold">Brand</h5>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck11" />
+                                        <label class="form-check-label" for="defaultCheck11">Insigni</label>
+                                        <span class="stats">220</span>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck12" />
+                                        <label class="form-check-label" for="defaultCheck12">Samsung</label>
+                                        <span class="stats">120</span>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck13" />
+                                        <label class="form-check-label" for="defaultCheck13">Apple</label>
+                                        <span class="stats">320</span>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck14" />
+                                        <label class="form-check-label" for="defaultCheck14">HP</label>
+                                        <span class="stats">32</span>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck15" />
+                                        <label class="form-check-label" for="defaultCheck15">Sony</label>
+                                        <span class="stats">520</span>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck16" />
+                                        <label class="form-check-label" for="defaultCheck16">Metra</label>
+                                        <span class="stats">55</span>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck17" />
+                                        <label class="form-check-label" for="defaultCheck17">Dyne</label>
+                                        <span class="stats">120</span>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck18" />
+                                        <label class="form-check-label" for="defaultCheck18">LG</label>
+                                        <span class="stats">98</span>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck19" />
+                                        <label class="form-check-label" for="defaultCheck19">Canon</label>
+                                        <span class="stats">99</span>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck20" />
+                                        <label class="form-check-label" for="defaultCheck20">Speck</label>
+                                        <span class="stats">575</span>
+                                    </div>
 
-                                <hr />
-                                <h5 class="font-weight-bold">Rating</h5>
-                                <div class="form-group">
-                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.5L12.781 6.09516L19 6.9979L14.5 11.3507L15.562 17.5L10 14.5952L4.438 17.5L5.5 11.3507L1 6.9979L7.219 6.09516L10 0.5Z" fill="#C4C4C4" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.5L12.781 6.09516L19 6.9979L14.5 11.3507L15.562 17.5L10 14.5952L4.438 17.5L5.5 11.3507L1 6.9979L7.219 6.09516L10 0.5Z" fill="#C4C4C4" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.5L12.781 6.09516L19 6.9979L14.5 11.3507L15.562 17.5L10 14.5952L4.438 17.5L5.5 11.3507L1 6.9979L7.219 6.09516L10 0.5Z" fill="#C4C4C4" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.5L12.781 6.09516L19 6.9979L14.5 11.3507L15.562 17.5L10 14.5952L4.438 17.5L5.5 11.3507L1 6.9979L7.219 6.09516L10 0.5Z" fill="#C4C4C4" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.5L12.781 6.09516L19 6.9979L14.5 11.3507L15.562 17.5L10 14.5952L4.438 17.5L5.5 11.3507L1 6.9979L7.219 6.09516L10 0.5Z" fill="#C4C4C4" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    & Up
-                                    <span class="stats">8500</span>
+                                    <hr />
+                                    <h5 class="font-weight-bold">Rating</h5>
+                                    <div class="form-group">
+                                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.5L12.781 6.09516L19 6.9979L14.5 11.3507L15.562 17.5L10 14.5952L4.438 17.5L5.5 11.3507L1 6.9979L7.219 6.09516L10 0.5Z" fill="#C4C4C4" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.5L12.781 6.09516L19 6.9979L14.5 11.3507L15.562 17.5L10 14.5952L4.438 17.5L5.5 11.3507L1 6.9979L7.219 6.09516L10 0.5Z" fill="#C4C4C4" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.5L12.781 6.09516L19 6.9979L14.5 11.3507L15.562 17.5L10 14.5952L4.438 17.5L5.5 11.3507L1 6.9979L7.219 6.09516L10 0.5Z" fill="#C4C4C4" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.5L12.781 6.09516L19 6.9979L14.5 11.3507L15.562 17.5L10 14.5952L4.438 17.5L5.5 11.3507L1 6.9979L7.219 6.09516L10 0.5Z" fill="#C4C4C4" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.5L12.781 6.09516L19 6.9979L14.5 11.3507L15.562 17.5L10 14.5952L4.438 17.5L5.5 11.3507L1 6.9979L7.219 6.09516L10 0.5Z" fill="#C4C4C4" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        & Up
+                                        <span class="stats">8500</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.5L12.781 6.09516L19 6.9979L14.5 11.3507L15.562 17.5L10 14.5952L4.438 17.5L5.5 11.3507L1 6.9979L7.219 6.09516L10 0.5Z" fill="#C4C4C4" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.5L12.781 6.09516L19 6.9979L14.5 11.3507L15.562 17.5L10 14.5952L4.438 17.5L5.5 11.3507L1 6.9979L7.219 6.09516L10 0.5Z" fill="#C4C4C4" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.5L12.781 6.09516L19 6.9979L14.5 11.3507L15.562 17.5L10 14.5952L4.438 17.5L5.5 11.3507L1 6.9979L7.219 6.09516L10 0.5Z" fill="#C4C4C4" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.5L12.781 6.09516L19 6.9979L14.5 11.3507L15.562 17.5L10 14.5952L4.438 17.5L5.5 11.3507L1 6.9979L7.219 6.09516L10 0.5Z" fill="#C4C4C4" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.5L12.781 6.09516L19 6.9979L14.5 11.3507L15.562 17.5L10 14.5952L4.438 17.5L5.5 11.3507L1 6.9979L7.219 6.09516L10 0.5V0.5Z" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        & Up
+                                        <span class="stats">3250</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.5L12.781 6.09516L19 6.9979L14.5 11.3507L15.562 17.5L10 14.5952L4.438 17.5L5.5 11.3507L1 6.9979L7.219 6.09516L10 0.5Z" fill="#C4C4C4" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.5L12.781 6.09516L19 6.9979L14.5 11.3507L15.562 17.5L10 14.5952L4.438 17.5L5.5 11.3507L1 6.9979L7.219 6.09516L10 0.5Z" fill="#C4C4C4" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.5L12.781 6.09516L19 6.9979L14.5 11.3507L15.562 17.5L10 14.5952L4.438 17.5L5.5 11.3507L1 6.9979L7.219 6.09516L10 0.5Z" fill="#C4C4C4" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.5L12.781 6.09516L19 6.9979L14.5 11.3507L15.562 17.5L10 14.5952L4.438 17.5L5.5 11.3507L1 6.9979L7.219 6.09516L10 0.5V0.5Z" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.5L12.781 6.09516L19 6.9979L14.5 11.3507L15.562 17.5L10 14.5952L4.438 17.5L5.5 11.3507L1 6.9979L7.219 6.09516L10 0.5V0.5Z" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        & Up
+                                        <span class="stats">1120</span>
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.5L12.781 6.09516L19 6.9979L14.5 11.3507L15.562 17.5L10 14.5952L4.438 17.5L5.5 11.3507L1 6.9979L7.219 6.09516L10 0.5Z" fill="#C4C4C4" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.5L12.781 6.09516L19 6.9979L14.5 11.3507L15.562 17.5L10 14.5952L4.438 17.5L5.5 11.3507L1 6.9979L7.219 6.09516L10 0.5Z" fill="#C4C4C4" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.5L12.781 6.09516L19 6.9979L14.5 11.3507L15.562 17.5L10 14.5952L4.438 17.5L5.5 11.3507L1 6.9979L7.219 6.09516L10 0.5Z" fill="#C4C4C4" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.5L12.781 6.09516L19 6.9979L14.5 11.3507L15.562 17.5L10 14.5952L4.438 17.5L5.5 11.3507L1 6.9979L7.219 6.09516L10 0.5Z" fill="#C4C4C4" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.5L12.781 6.09516L19 6.9979L14.5 11.3507L15.562 17.5L10 14.5952L4.438 17.5L5.5 11.3507L1 6.9979L7.219 6.09516L10 0.5V0.5Z" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    & Up
-                                    <span class="stats">3250</span>
-                                </div>
-                                <div class="form-group">
-                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.5L12.781 6.09516L19 6.9979L14.5 11.3507L15.562 17.5L10 14.5952L4.438 17.5L5.5 11.3507L1 6.9979L7.219 6.09516L10 0.5Z" fill="#C4C4C4" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.5L12.781 6.09516L19 6.9979L14.5 11.3507L15.562 17.5L10 14.5952L4.438 17.5L5.5 11.3507L1 6.9979L7.219 6.09516L10 0.5Z" fill="#C4C4C4" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.5L12.781 6.09516L19 6.9979L14.5 11.3507L15.562 17.5L10 14.5952L4.438 17.5L5.5 11.3507L1 6.9979L7.219 6.09516L10 0.5Z" fill="#C4C4C4" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.5L12.781 6.09516L19 6.9979L14.5 11.3507L15.562 17.5L10 14.5952L4.438 17.5L5.5 11.3507L1 6.9979L7.219 6.09516L10 0.5V0.5Z" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.5L12.781 6.09516L19 6.9979L14.5 11.3507L15.562 17.5L10 14.5952L4.438 17.5L5.5 11.3507L1 6.9979L7.219 6.09516L10 0.5V0.5Z" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    & Up
-                                    <span class="stats">1120</span>
-                                </div>
+                                <div class="btn btn-default text-center mt-4 w-100">CLEAR ALL FILTERS</div>
                             </div>
                         </div>
-                        <div class="btn btn-default text-center mt-4 w-100">CLEAR ALL FILTERS</div>
                     </div>
-                    <div class="col-9">
+                    <div class="col-12 col-md-8 col-lg-9">
                         <div class="row justify-content-around align-items-end">
-                            <div class="col">
+                            <div class="col-md-6">
                                 <div class="holder-title">
                                     <h5 class="mb-0">7,618 results found in 5ms</h5>
                                 </div>
                             </div>
-                            <div class="col text-right">
+                            <div class="col-md-6 text-right">
                                 <a href="#" class="btn btn-callout mr-2">
                                     Default
                                     <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -634,7 +642,7 @@
                                                 <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9205 2.14929C13.2296 1.41343 12.2924 1 11.3151 1C10.3378 1 9.40063 1.41343 8.70976 2.14929L7.99982 2.90512L7.28988 2.14929C5.85098 0.61741 3.51807 0.617411 2.07917 2.14929C0.640276 3.68118 0.640276 6.16485 2.07917 7.69674L2.78911 8.45256L7.99982 14L13.2105 8.45256L13.9205 7.69674C14.6117 6.96122 15 5.96344 15 4.92302C15 3.88259 14.6117 2.88481 13.9205 2.14929Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                                 </svg>
-                                                wishlist
+                                                <span>wishlist</span>
                                             </a>
                                             <a href="#" class="btn btn-default">
                                                 <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -642,7 +650,7 @@
                                                     <path opacity="0.737212" d="M1 5.5H17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                                     <path opacity="0.737212" d="M13 9C13 10.6569 11.433 12 9.5 12C7.567 12 6 10.6569 6 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                                 </svg>
-                                                add cart
+                                                <span>add cart</span>
                                             </a>
                                         </div>
                                     </div>
@@ -678,7 +686,7 @@
                                                 <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9205 2.14929C13.2296 1.41343 12.2924 1 11.3151 1C10.3378 1 9.40063 1.41343 8.70976 2.14929L7.99982 2.90512L7.28988 2.14929C5.85098 0.61741 3.51807 0.617411 2.07917 2.14929C0.640276 3.68118 0.640276 6.16485 2.07917 7.69674L2.78911 8.45256L7.99982 14L13.2105 8.45256L13.9205 7.69674C14.6117 6.96122 15 5.96344 15 4.92302C15 3.88259 14.6117 2.88481 13.9205 2.14929Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                                 </svg>
-                                                wishlist
+                                                <span>wishlist</span>
                                             </a>
                                             <a href="#" class="btn btn-default">
                                                 <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -686,7 +694,7 @@
                                                     <path opacity="0.737212" d="M1 5.5H17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                                     <path opacity="0.737212" d="M13 9C13 10.6569 11.433 12 9.5 12C7.567 12 6 10.6569 6 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                                 </svg>
-                                                add cart
+                                                <span>add cart</span>
                                             </a>
                                         </div>
                                     </div>
@@ -722,7 +730,7 @@
                                                 <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9205 2.14929C13.2296 1.41343 12.2924 1 11.3151 1C10.3378 1 9.40063 1.41343 8.70976 2.14929L7.99982 2.90512L7.28988 2.14929C5.85098 0.61741 3.51807 0.617411 2.07917 2.14929C0.640276 3.68118 0.640276 6.16485 2.07917 7.69674L2.78911 8.45256L7.99982 14L13.2105 8.45256L13.9205 7.69674C14.6117 6.96122 15 5.96344 15 4.92302C15 3.88259 14.6117 2.88481 13.9205 2.14929Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                                 </svg>
-                                                wishlist
+                                                <span>wishlist</span>
                                             </a>
                                             <a href="#" class="btn btn-default">
                                                 <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -730,7 +738,7 @@
                                                     <path opacity="0.737212" d="M1 5.5H17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                                     <path opacity="0.737212" d="M13 9C13 10.6569 11.433 12 9.5 12C7.567 12 6 10.6569 6 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                                 </svg>
-                                                add cart
+                                                <span>add cart</span>
                                             </a>
                                         </div>
                                     </div>
@@ -766,7 +774,7 @@
                                                 <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9205 2.14929C13.2296 1.41343 12.2924 1 11.3151 1C10.3378 1 9.40063 1.41343 8.70976 2.14929L7.99982 2.90512L7.28988 2.14929C5.85098 0.61741 3.51807 0.617411 2.07917 2.14929C0.640276 3.68118 0.640276 6.16485 2.07917 7.69674L2.78911 8.45256L7.99982 14L13.2105 8.45256L13.9205 7.69674C14.6117 6.96122 15 5.96344 15 4.92302C15 3.88259 14.6117 2.88481 13.9205 2.14929Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                                 </svg>
-                                                wishlist
+                                                <span>wishlist</span>
                                             </a>
                                             <a href="#" class="btn btn-default">
                                                 <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -774,7 +782,7 @@
                                                     <path opacity="0.737212" d="M1 5.5H17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                                     <path opacity="0.737212" d="M13 9C13 10.6569 11.433 12 9.5 12C7.567 12 6 10.6569 6 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                                 </svg>
-                                                add cart
+                                                <span>add cart</span>
                                             </a>
                                         </div>
                                     </div>
@@ -810,7 +818,7 @@
                                                 <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9205 2.14929C13.2296 1.41343 12.2924 1 11.3151 1C10.3378 1 9.40063 1.41343 8.70976 2.14929L7.99982 2.90512L7.28988 2.14929C5.85098 0.61741 3.51807 0.617411 2.07917 2.14929C0.640276 3.68118 0.640276 6.16485 2.07917 7.69674L2.78911 8.45256L7.99982 14L13.2105 8.45256L13.9205 7.69674C14.6117 6.96122 15 5.96344 15 4.92302C15 3.88259 14.6117 2.88481 13.9205 2.14929Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                                 </svg>
-                                                wishlist
+                                                <span>wishlist</span>
                                             </a>
                                             <a href="#" class="btn btn-default">
                                                 <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -818,7 +826,7 @@
                                                     <path opacity="0.737212" d="M1 5.5H17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                                     <path opacity="0.737212" d="M13 9C13 10.6569 11.433 12 9.5 12C7.567 12 6 10.6569 6 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                                 </svg>
-                                                add cart
+                                                <span>add cart</span>
                                             </a>
                                         </div>
                                     </div>
@@ -854,7 +862,7 @@
                                                 <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9205 2.14929C13.2296 1.41343 12.2924 1 11.3151 1C10.3378 1 9.40063 1.41343 8.70976 2.14929L7.99982 2.90512L7.28988 2.14929C5.85098 0.61741 3.51807 0.617411 2.07917 2.14929C0.640276 3.68118 0.640276 6.16485 2.07917 7.69674L2.78911 8.45256L7.99982 14L13.2105 8.45256L13.9205 7.69674C14.6117 6.96122 15 5.96344 15 4.92302C15 3.88259 14.6117 2.88481 13.9205 2.14929Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                                 </svg>
-                                                wishlist
+                                                <span>wishlist</span>
                                             </a>
                                             <a href="#" class="btn btn-default">
                                                 <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -862,7 +870,7 @@
                                                     <path opacity="0.737212" d="M1 5.5H17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                                     <path opacity="0.737212" d="M13 9C13 10.6569 11.433 12 9.5 12C7.567 12 6 10.6569 6 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                                 </svg>
-                                                add cart
+                                                <span>add cart</span>
                                             </a>
                                         </div>
                                     </div>
@@ -884,13 +892,8 @@
                 <li class="page-item"><a class="page-link" href="#">1</a></li>
                 <li class="page-item"><a class="page-link" href="#">2</a></li>
                 <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item active" aria-current="page"><a class="page-link" href="#">4</a></li>
                 <li class="page-item"><a class="page-link" href="#">5</a></li>
-                <li class="page-item active" aria-current="page""><a class="page-link" href="#">6</a></li>
-                <li class="page-item"><a class="page-link" href="#">7</a></li>
-                <li class="page-item"><a class="page-link" href="#">8</a></li>
-                <li class="page-item"><a class="page-link" href="#">9</a></li>
-                <li class="page-item"><a class="page-link" href="#">10</a></li>
                 <li class="page-item">
                     <a class="page-link" href="#" aria-label="Next">
                         <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">

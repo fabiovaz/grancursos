@@ -1,22 +1,20 @@
 $(document).ready(function () {
-    $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-        disableOn: 700,
-        type: 'iframe',
-        mainClass: 'mfp-fade',
-        removalDelay: 160,
-        preloader: false,
-        fixedContentPos: false
-    });
+    $(".switcher").on("click", function (e) {
+        e.preventDefault();
 
-    $('.popup-with-zoom-anim').magnificPopup({
-        type: 'inline',
-        fixedContentPos: false,
-        fixedBgPos: true,
-        overflowY: 'auto',
-        closeBtnInside: true,
-        preloader: false,
-        midClick: true,
-        removalDelay: 300,
-        mainClass: 'my-mfp-zoom-in'
+        if ($(".switcher").hasClass("open")) {
+            $(".switcher").removeClass("open");
+            $("aside").removeClass("open");
+            $("main").removeClass("open");
+            $("header").removeClass("open");
+        } else {
+            $(".switcher").addClass("open");
+            $("aside").addClass("open");
+            $("main").addClass("open");
+            $("header").addClass("open");
+        }
     });
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        $('#collapseFilters').removeClass("show");
+    }
 });
